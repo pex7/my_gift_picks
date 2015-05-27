@@ -45,6 +45,8 @@ gem 'rspec-rails'
 
 gem 'factory_girl'
 gem 'database_cleaner'
+gem 'rails_12factor'
+
 
 # Use unicorn as the app server
 # gem 'unicorn'
