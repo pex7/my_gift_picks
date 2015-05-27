@@ -1,0 +1,44 @@
+.navbar-right {
+	li:last-child {
+		padding-right: 0.9375rem;
+	}
+}
+
+.container {
+	margin-top: 3.125rem;
+}
+
+body {
+	font-size: 16px;
+	padding-top: 3.125rem;
+}
+
+.form-submit {
+	margin-top: 0.9375rem;
+}
+
+.jumbotron.main-header {
+	padding-top: 0.9375rem;
+}
+
+.jumbotron.main-header h1 {
+	padding: 0.3em;
+	font-size: 4em;
+	margin: 0;
+}
+
+h1, .main-header, .show-header {
+	text-align: center;
+}
+
+i {
+	padding-right: 0.625rem;
+}
+
+.navbar-brand {
+	font-family: 'Indie Flower', cursive;
+}
+
+.col-md-offset-4 h3 {
+	text-align: center;
+}

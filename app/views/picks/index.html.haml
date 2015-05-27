@@ -1,0 +1,15 @@
+.container
+	.row
+		.col-md-6.col-md-offset-3
+			.text-center
+				=link_to 'Add Gift', new_user_pick_path(@user)
+				%h3 Gift Picks
+				.table-responsive
+					%table.table
+						-@picks.each_with_index do |pick|
+							%tr
+								%td
+									=link_to "#{pick.item}", "#{pick.url}"
+									-if user_signed_in? and current_user.id == @user.id
+										=link_to 'x', [@user, pick], method: :delete, class: 'close'
+
