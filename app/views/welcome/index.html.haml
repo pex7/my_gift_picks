@@ -13,7 +13,7 @@
       .col-md-4.col-md-offset-4.text-center
         =link_to "My List", user_picks_path(current_user.id), class: "btn btn-warning btn-lg"
     -else user_signed_in?
-      .col-md-4.col-md-offset-4
+      .col-md-4.col-md-offset-4.text-center
         %h3
         =link_to "Login", new_user_session_path
         to add a gift to your list.
