@@ -25,4 +25,9 @@
               = submit_tag "Search", name: nil, class: "btn btn-default"
           .navbar-collapse.navbar-right
             %ul.nav.navbar-nav= render 'devise/nav/nav'
+    .messages
+      -if notice
+        %p.alert.alert-success
+      -else
+        %p.alert.alert-danger
     = yield

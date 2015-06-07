@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'users/index'
 
   root 'welcome#index'
-  devise_for :users, :path => 'accounts' 
+  devise_for :users, :path => 'accounts', :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   resources :users do
     resources :picks
   end

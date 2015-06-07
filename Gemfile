@@ -33,8 +33,10 @@ gem 'spring',        group: :development
 gem 'haml-rails'
 gem 'devise'
 gem 'carrierwave'
-gem 'better_errors'
-gem 'binding_of_caller'
+group :development do
+	gem 'better_errors'
+	gem 'binding_of_caller'
+end
 gem 'pry'
 gem 'pry-remote'
 gem 'font-awesome-rails'
@@ -46,7 +48,7 @@ gem 'rspec-rails'
 gem 'factory_girl'
 gem 'database_cleaner'
 gem 'rails_12factor'
-
+gem 'omniauth-facebook'
 
 # Use unicorn as the app server
 # gem 'unicorn'
